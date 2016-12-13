@@ -1,0 +1,36 @@
+﻿Alice:
+* Proposal outline:
+   * Motivation
+   * Description of work we’ve done so far on the project
+   * Minimal and maximal outcomes
+* Functions created in code:
+   * BritishToAmerican and AmericanToBritish (inputs the synonym list and uses Subtlex UK/US to get the frequency for each)
+   * MostLikelyWordProbabilities (Takes as input the output of one of the above, and outputs a list of each synonym, with its ratio (its frequency divided by the sum of all frequencies))
+   * DisproportionateWords (finds the most disproportionately British or American word by comparing the frequencies for each word)
+   * userPromptWordSynonymGenerator (prompts the user, uses WordNet to get the list of synonyms, finds which synonyms of WordNet work best)
+   * calcMostCommonSynonymSimilarity: not the whole thing, just “translating” it from a list of numbers, to a user-friendly list of words and suggestions
+   * Error checking
+* Presentation:
+   * Created the outline
+   * Slides made: Motivation, Existing work, WordNet, Subtlex, Probability
+   * Slides presented: Existing work, WordNet, Probability, Demo
+* Final paper:
+   * Related research
+   * Description of implementation
+
+
+Rosie:
+* Proposal outline:
+   * Description of topic
+   * Outline (approach, data and tools)
+* Functions created in code:
+   * TheMostCommon (prints out the probabilities of most common words)
+   * sss (looks up word similarity from UMBC Semantic Similarity Service)
+   * calcSynonymSimilarity (calls function sss for each pair of words in the synonym_list to determine similarity between any two words)
+   * calcMostCommonSynonymSimilarity (calculates the similarities of the topNMostCommonBeforeTranslations and topNMostCommonTranslations)
+* Presentation:
+   * Slides made: Similarity, Shortcomings and further work to be done
+   * Slides presented: Motivation, What is it?, Subtlex, Similarity, Shortcomings and further work to be done
+* Final paper:
+   * Description of motivating problem
+   * Analysis of shortcomings and thoughts on future development
